@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTE</title>
+    <title>Incluir</title>
 </head>
 <body>
-    <h1>TESTE</h1>
-    <a href="../Contatos">voltar</a>
-    <form action="#" method="post">
+    <h1>Incluir</h1>
+    <a href="./../Contatos">voltar</a>
+    <form action="./../Contatos/Incluir" method="post">
+        <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <p>
             <label for="nome">Nome</label>
             <input type="text" name="nome" required>
@@ -29,6 +30,8 @@
             <label for="estado">Estado</label>
             <input type="text" name="estado" required>
         </p>
+        
+        <button type="submit">Enviar</button>
     </form>
     
 </body>

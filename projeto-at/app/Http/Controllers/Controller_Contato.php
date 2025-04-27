@@ -10,7 +10,7 @@ class Controller_Contato extends Controller
     public function index() {
         $contatos = Contato::all();
 
-        return view ('contatos.contatos', compact('contatos'));
+        return view ('contatos.consultaContatos', compact('contatos'));
     }
 
 }
